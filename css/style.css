@@ -1,0 +1,340 @@
+body{
+   background-color: #0A090A;
+   color: #fff;
+   font-family: 'Roboto', sans-serif;
+   background-image: url('../img/main-bg.jpg');
+   background-repeat: no-repeat;
+   background-position: top center;
+}
+.conteuner{
+    /* максимальная ширина */
+    max-width: 1140px;
+    /* выравниваем по центру */
+    margin: auto;
+}
+/* stil dlya shapki */
+.header {
+    display: flex;
+    /* выравниваем по центру по вертикали */
+    align-items: center;
+    justify-content: space-between;
+    /* внутрений отступ сверху */
+    padding-top: 45px;
+}
+.logo{
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 28px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    flex: 0.8;
+}
+.search-input{
+    flex: 1;
+    /* фоновый цвет */
+    background: rgba(196, 196, 196, 0.5);
+       /* скругление */
+    border-radius: 5px;
+    /* внутреный отступ сверху */
+    padding-top: 12px;
+    /* внутреный отступ снизу */
+    padding-bottom: 12px;
+    /* отступ по краям */
+    padding-left: 18px;
+    padding-right: 18px;
+    /* убираем рамку */
+    border: none;
+    font-size: 14px;
+    line-height: 16px;
+}
+::-webkit-input-placeholder { /* Edge */
+    color: #AEAEAE;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #AEAEAE;
+  }
+  
+  ::placeholder {
+   color: #AEAEAE;;
+  }
+.search-button{
+    background-color: transparent;
+    border: none;
+    padding: 10px 18px;
+}
+.user{
+    display: flex;
+    align-items: center;
+}
+.avatar{
+    margin-left: 20px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.title{
+    margin: 0px;
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    line-height: 64px;
+    margin-bottom: 7px;
+}
+.title-en {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 23px;
+    color: #787878;
+    margin-bottom: 38px;
+}
+.info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 108px;
+}
+.movie-info {
+    display: flex;
+    align-items: center;
+}
+.tag {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 19px;
+    color: #787878;
+    background: #fff;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-right: 20px;
+}
+.country {
+    font-size: 16px;
+    line-height: 19px;
+    margin-right: 33px;
+}
+.play {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.play:before {
+    display: inline-block;
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/play.svg);
+    background-size: 100%;
+    margin-right: 15px;
+}
+.more {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    text-decoration: none;
+}
+.more:after {
+    content: '';
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/play.svg);
+    background-size: 100%;
+    margin-left: 15px;
+    transform: rotate(90deg);
+}
+.content {
+    display: flex;
+    justify-content: space-between;
+    background: #ffffff;
+    border-radius: 3px;
+    color: black;
+    padding: 3% 4%;
+}
+.short-info {
+    margin-right: 3%;
+}
+.poster {
+    display: block;
+    margin-top: -40%;
+}
+.button {
+    background: #FF8F27;
+    padding: 10px 44px;
+    color: white;
+    font-size: 14px;
+    line-height: 16px;
+    border: none;
+}
+.acters-title {
+    padding-left: 15px;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 10px;
+}
+.actors-list {
+    margin: 0px;
+    list-style: none;
+    padding-left: 15px;
+    text-decoration: underline;
+    line-height: 150%;
+}
+.full-info {
+    flex: 0.97;
+}
+.full-content {
+    display: flex;
+    justify-content: space-between;
+}
+.tabs-content {
+    display: none;
+    margin-right: 70px;
+}
+.visible {
+    display: block;
+}
+.tabs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4%;
+}
+.tabs-item {
+    color: #000000;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 21px;
+}
+.tabs-item:not(:last-child) {
+    margin-right: 4%;
+}
+.text-item-active {
+    color: #FF8F27;
+}
+.text {
+    font-size: 16px;
+    line-height: 140%;
+    margin-top: 0px;
+}
+.subsctribe-title {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 150%;
+    margin-bottom: 14px;
+    margin: 0px;
+}
+.subsctribe-input {
+    background: rgba(196, 196, 196, 0.5);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border: none;
+    font-size: 14px;
+    line-height: 16px;
+}
+.subsctribe-form {
+    display: flex;
+    margin-bottom: 48px;
+}   
+.subsctribe-button {
+    background: #FF8F27;
+    border-radius: 0px 5px 5px 0px;
+    border: none;
+    padding: 12px;
+}
+@media (max-width: 1200px) {
+    .contener {
+        max-width: 960px;
+    }
+    .tabs-item {
+        font-size: 16px;
+    }
+}
+@media (max-width: 992px) {
+    .conteuner {
+        max-width: 750px;
+    }
+    .tabs {
+        flex-wrap: wrap;
+    }
+    .tabs-item {
+        flex-basis: 20%;
+        line-height: 2;
+    }
+    .full-content {
+        flex-wrap: wrap;
+    }
+    .tabs-content {
+        margin-bottom: 5%;
+    }
+    .text {
+        font-size: 14px;
+    }
+    .actors-list {
+        font-size: 14px;
+    }
+}
+@media (max-width: 768px) {
+    .conteuner {
+        max-width: 540px;
+    }
+    .more {
+        display: none;
+    }
+    .tabs-item {
+        flex-basis: 33%;
+    }
+    .tabs-content {
+        margin-right: 0;
+    }
+}
+@media (max-width: 578px) {
+    .conteuner {
+        width: 90%;
+    }
+    .header {
+        flex-wrap: wrap;
+    }
+    .search {
+        flex-basis: 100%;
+        order: 3;
+        margin-top: 5%;
+    }
+    .content {
+        flex-wrap: wrap;
+    }
+    .short-info {
+        margin-bottom: 5%;
+    }
+    .actors-list, .actors-title {
+        display: none;
+    }
+    .movie-info {
+        flex-wrap: wrap;
+    }
+    .play {
+        flex-basis: 100%;
+        margin-top: 10%;
+    }
+    .short-info {
+        margin-right: 0;
+    }
+    .button {
+        width: 100%;
+    }
+    .poster { 
+        margin-top: -20%;
+        display: inline-block;
+        width: 100%;
+    }
+}
